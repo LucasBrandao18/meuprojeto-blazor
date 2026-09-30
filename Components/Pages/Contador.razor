@@ -1,0 +1,20 @@
+@page "/contador"
+@rendermode InteractiveServer
+
+<PageTitle>Contador da aula</PageTitle>
+
+<h3>Contador</h3>
+<p role="status">Valor atual: @contador</p>
+<button type="button" class="btn btn-primary" @onclick="Incrementar"
+        disabled="@(!RendererInfo.IsInteractive)">
+    Clique aqui
+</button>
+
+@code {
+    private int contador = 0;
+
+    private void Incrementar()
+    {
+        contador++;
+    }
+}

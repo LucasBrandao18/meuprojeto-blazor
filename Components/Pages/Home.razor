@@ -1,0 +1,15 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+<p>Meu nome é <strong>@Nome</strong> e tenho <strong>@Idade</strong> anos.</p>
+
+<p class="text-secondary">Dados didáticos reproduzidos do exemplo da aula.</p>
+<p>Explore a interpolação de valores e o contador interativo pelo menu lateral. Esta página foi atualizada com Hot Reload.</p>
+
+@code {
+    private string Nome = "Epaminondas";
+    private int Idade = 30;
+}
